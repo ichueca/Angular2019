@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Empleado } from 'src/app/modelo/empleado';
 
 @Component({
@@ -7,8 +7,8 @@ import { Empleado } from 'src/app/modelo/empleado';
   styleUrls: ['./empleado.component.css']
 })
 export class EmpleadoComponent implements OnInit {
-  empleado:Empleado;
-  ocultar:boolean = false;
+  @Input() empleado:Empleado;
+  @Input() ocultar:boolean = false;
   constructor() { 
     this.empleado = new Empleado(1,"Juan","López","Contabilidad");
   }
