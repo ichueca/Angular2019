@@ -9,4 +9,7 @@ export class Empleado {
     nombreCompleto(){
         return this.apellido + ", " + this.nombre;
     }
+    foto(){
+        return `https://randomuser.me/api/portraits/${this.sexo=="M"?"wo":""}men/${this.id}.jpg`;
+    }
 }
