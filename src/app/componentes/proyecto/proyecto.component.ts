@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Proyecto } from 'src/app/modelo/proyecto';
 import { Empleado } from 'src/app/modelo/empleado';
+import { ConsoleReporter } from 'jasmine';
 
 @Component({
   selector: 'app-proyecto',
@@ -23,6 +24,11 @@ export class ProyectoComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  quitarEmpleado(empleado:Empleado){
+    const index = this.proyecto.empleados.indexOf(empleado);
+    this.proyecto.empleados.splice(index,1);
   }
 
 }

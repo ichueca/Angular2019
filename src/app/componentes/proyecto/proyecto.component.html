@@ -13,6 +13,6 @@
     <div class="col-2"></div>
     <div class="col-10">
         <app-miembro-proyecto *ngFor="let e of proyecto.empleados"
-            [empleado]="e"></app-miembro-proyecto>
+            [empleado]="e" (empleadoDesasignado)="quitarEmpleado($event)"></app-miembro-proyecto>
     </div>
 </div>
