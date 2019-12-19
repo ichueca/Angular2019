@@ -8,6 +8,9 @@ import { ListaEmpleadosComponent } from './componentes/lista-empleados/lista-emp
 import { MiembroProyectoComponent } from './componentes/miembro-proyecto/miembro-proyecto.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { ListaProyectosComponent } from './componentes/lista-proyectos/lista-proyectos.component';
+import { BarraNavegacionComponent } from './componentes/barra-navegacion/barra-navegacion.component';
+import { EmpleadoDetalleComponent } from './componentes/empleado-detalle/empleado-detalle.component';
+import { ResultadoBusquedaComponent } from './componentes/resultado-busqueda/resultado-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ListaProyectosComponent } from './componentes/lista-proyectos/lista-pro
     ListaEmpleadosComponent,
     MiembroProyectoComponent,
     ProyectoComponent,
-    ListaProyectosComponent
+    ListaProyectosComponent,
+    BarraNavegacionComponent,
+    EmpleadoDetalleComponent,
+    ResultadoBusquedaComponent
   ],
   imports: [
     BrowserModule,

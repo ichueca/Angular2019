@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Empleado } from 'src/app/modelo/empleado';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-empleado',
@@ -9,15 +10,14 @@ import { Empleado } from 'src/app/modelo/empleado';
 export class EmpleadoComponent implements OnInit {
   @Input() empleado:Empleado;
   @Input() ocultar:boolean = false;
-  constructor() { 
-    this.empleado = new Empleado(1,"Juan","López","Contabilidad","V");
+  constructor(private router:Router) { 
   }
 
   ngOnInit() {
   }
 
-  cambiarVisibilidad(){
-    this.ocultar = !this.ocultar;
+  verDetalles(){
+    this.router.navigate(['/empleados',this.empleado.id]);
   }
 
 }

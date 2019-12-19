@@ -12,6 +12,6 @@
     <div class="card-body">
         <h5 class="card-title">{{empleado.nombreCompleto()}}</h5>
         <p class="card-text">Departamento de {{empleado.departamento}}</p>
-        <button class="btn btn-primary" (click)="verDetalles()">Ver Detalles</button>
+        <a class="btn btn-primary" [routerLink]="['empleados']">Volver</a>
     </div>
 </div>

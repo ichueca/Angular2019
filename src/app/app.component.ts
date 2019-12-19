@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gestión de Proyectos';
+
+  buscar(evt){
+    console.log("Barra");
+    console.log(evt);
+  }
 }
